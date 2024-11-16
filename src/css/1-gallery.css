@@ -1,0 +1,26 @@
+.section-gallery{
+  background-color: #fff;
+  padding: 24px 0;
+}
+.container {
+  max-width: 1128px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
+  transition: transform .3s;
+}
+
+.gallery-item:focus,
+.gallery-item:hover {
+  transform: scale(1.05);
+}
